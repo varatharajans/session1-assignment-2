@@ -24,6 +24,8 @@ output
 
 2 You have 25 excel files with names as xx_1.xlsx, xx_2.xlsx,........xx_25.xlsx in a dir.
 Write a program to extract the contents of each excel sheet and make it one df.
+
+
 Ans:-
 	setwd("c:/R/mergeme") 0r specific file path name
 files=list.files(pattern=".xlsx")
@@ -40,6 +42,8 @@ df<-lapply(files, read.xlsx) %>% bind_rows()
 
 3 If the above 25 files were csv files, what would be your script to read?
 
+
+
 Ans:-
 
 setwd("c:/R/mergeme") 0r specific file path name
@@ -55,22 +59,10 @@ library(dplyr)
 df<-lapply(files, read.csv) %>% bind_rows()
 
 
-
-
  	
 Expected Output 
 Not Applicable Copyrights© 2017, AcadGild. All Rights Reserved 3 
 
 The Approximate time to complete this task is 20 Minutes.
-
-
-
-
-
-
-
-
-
-
 
 
